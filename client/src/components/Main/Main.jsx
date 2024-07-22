@@ -153,7 +153,7 @@ const Main = () => {
     <div className={`main ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <UploadPanel/>
       <div className="nav">
-        <p>DataWhiz</p>
+        <p>Convo AI</p>
         <div className="nav-right">
           <button onClick={toggleDarkMode} className="theme-toggle">
             {darkMode ? '☀️' : '🌙'}
@@ -168,7 +168,7 @@ const Main = () => {
               <div key={index} className={`message ${message.type}`}>
                 <div className='message-title'>
                   <img src={message.type === 'user' ? assets.user_icon : assets.gemini_icon} alt="" />
-                  <p>{message.type === 'user' ? 'You' : 'DataWhiz'}</p>
+                  <p>{message.type === 'user' ? 'You' : 'Convo AI'}</p>
                 </div>
                 <div className="message-content">
                   {formatMessage(message.content)}
@@ -179,7 +179,7 @@ const Main = () => {
               <div className="message ai">
                 <div className='message-title'>
                   <img src={assets.gemini_icon} alt="" />
-                  <p>DataWhiz</p>
+                  <p>Convo AI</p>
                 </div>
                 <div className="message-content">
                   <div className="loader">
@@ -213,7 +213,7 @@ const Main = () => {
             </div>
           </div>
           <p className="bottom-info">
-            DataWhiz may display inaccurate info, including about people, so double-check its responses.
+            Convo AI may display inaccurate info, including about people, so double-check its responses.
           </p>
         </div>
       </div>
